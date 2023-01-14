@@ -1,6 +1,4 @@
 .date{
-
-    background-color: brown;
     width: 50%;
     margin: 0 auto;
 }
@@ -15,4 +13,21 @@
     text-align: center;
     margin: 0 auto;
 
+}
+.sep-6-2012{
+    background-color: #F5EDCE;
+
+}
+.jan-4-2042{
+
+    background-color: #89C4E1;
+}
+.feb-9-2029{
+    background-color: #58287F;
+}
+.aug-11-2032{
+    background-color: #1A0000;
+}
+.dec-12-2021{
+    background-color: #FAAB78;
 }
