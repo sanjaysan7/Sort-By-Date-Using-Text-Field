@@ -1,0 +1,18 @@
+.date{
+
+    background-color: brown;
+    width: 50%;
+    margin: 0 auto;
+}
+.date p{
+
+    color: white;
+    text-align: center;
+}
+
+.sort-items{
+
+    text-align: center;
+    margin: 0 auto;
+
+}
