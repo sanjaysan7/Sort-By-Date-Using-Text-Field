@@ -1,0 +1,51 @@
+<div class="banner-vid-outer">
+
+  <video class="bg-video" src="{{ module.background_video }}" autoplay loop playsinline muted>
+    <source src="polina.webm" type="video/webm">
+    <source src="polina.mp4" type="video/mp4">
+  </video>
+
+  <div class="page-center">
+    <div class="banner-vid-inner"> 
+      <div class="watch-now-button-outer">
+        <div class="watch-now-image">
+          {% if module.play_image.src %}
+          {% set sizeAttrs = 'width="{{ module.play_image.width }}" height="{{ module.play_image.height }}"' %}
+          {% if module.play_image.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.play_image.width }}" height="{{ module.play_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.play_image.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.play_image.max_width }}" height="{{ module.play_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.play_image.loading != 'disabled' ? 'loading="{{ module.play_image.loading }}"' : '' %}
+          <img src="{{ module.play_image.src }}" alt="{{ module.play_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="watch-now-text">
+          <h2>
+            {{ module.watch_now_text }}
+          </h2>
+        </div>
+        <!--         experiment code  start -->
+        <div class="find-popup">
+          <div class="overlay-content">
+            <div class="popup-content">
+              <a href="javascript:void(0)" class="closebtn">X</a>
+              <div class="nlp-form-popup">
+                <video class="pop-up-watch-now" src="{{ module.background_video }}" autoplay loop playsinline muted>
+                  <source src="polina.webm" type="video/webm">
+                  <source src="polina.mp4" type="video/mp4">
+                </video>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--         experiment code  end -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
