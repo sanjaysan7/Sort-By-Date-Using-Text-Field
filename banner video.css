@@ -1,0 +1,61 @@
+/* ------------------------------watch now popup style start------------------------*/
+.find-popup{
+    display:none;
+    height:100%;
+    width:100%;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    background-color:#000000;
+    background-color:rgba(0,0,0,0.9);
+    overflow-x:hidden;
+    transition:.5s;
+}
+.find-popup .popup-content {
+    position: relative;
+    z-index: 999999;
+    max-width: 750px;
+    margin: 0 auto;
+    top: 60px;
+}
+.find-popup a.closebtn { 
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    background-color: #69d2ed;
+    padding: 9px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------watch now popup style end------------------------*/
+
+
+ .bg-video {
+  position:relative;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+/*   position: fixed; */
+  top: 0;
+  left: 0;
+}
+.banner-vid-inner{
+ position:relative;
+}
+.watch-now-button-outer{
+  cursor:pointer;
+ display:flex;
+  gap: 25px;
+ align-items:center;
+ position:absolute;
+ bottom:28px;
+}
+.watch-now-text h2{
+font-family: 'Barlow';
+}
